@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=font1|font2|etc' type='text/css'>
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato|font2|etc' type='text/css'>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -21,13 +21,13 @@
             <div class="flex-container nav">
                 <ul>
                     <li>
-                        <h1>FOOSESHOES</h1>
+                        <h1 class="foo">FOOSESHOES</h1>
                     </li>
                 </ul>
                 <ul>
                     <li><i class="fa fa-search"></i></li>
                     <li>
-                        <h1>LOGINorREGISTER</h1></li>
+                        <h1 class="log">LOGIN or REGISTER</h1></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
             </ul>
             <ul>
                 <li class="cart"><a href="#"><i class="fa fa-star-o"></i>30</a></li>
-                <li class="cart"><a href="#"><i class="fa fa-shopping-cart">0</i></a></li>
+                <li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i>0</a></li>
             </ul>
         </div>
     </header>
@@ -59,18 +59,36 @@
                 <li class="cart"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
             </ul>
         </div>
+            <nav>
+                <button>
+                    <h1>Pink Shoes</h1>
+                    <p>Now at $145.99</p>
+                </button>
+                <button>
+                    <h1>Anna Field</h1>
+                    <p>Limited Edition</p>
+                </button>
+                <button>
+                    <h1>Prada</h1>
+                    <p>Summer is Coming</p>
+                </button>
+                <button>
+                    <h1>Casadel</h1>
+                    <p>All Colors available</p>
+                </button>
+                <button>
+                    <h1>Mellow Yellow</h1>
+                    <p>Free delivery</p>
+                </button>
+            </nav>
     </section>
-    <nav class="slider">
-        <div class="flex-container flex-nav row">
-            <ul>
-                <li class="pink"><a href="#"><h1>Pink Shoes</h1><p>Now at $145.99</p></a></li>
-                <li class="anna"><a href="#"><h1>Anna Field</h1><p>Limited Edition</p></a></li>
-                <li class="prada"><a href="#"><h1>Prada</h1><p>Summer is Coming</p></a></li>
-                <li class="casadel"><a href="#"><h1>Casadel</h1><p>All Colors available</p></a></li>
-                <li class="mellow_yellow"><a href="#"><h1>Mellow Yellow</h1><p>Free delivery</p></a></li>
-            </ul>
+    <div class="flex-container">
+        <div class="offers">
+            <img src="/images/shoes.jpg">
+            <img src="/images/shoes_2.jpg">
+            <img src="/images/shoes_3.jpg">
         </div>
-    </nav>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="js/app.js"></script>
 </body>
