@@ -5,7 +5,6 @@
 <!--[if gte IE 9]><!-->
 <html>
 <!--<![endif]-->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,83 +13,130 @@
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato|font2|etc' type='text/css'>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
-    <header>
-        <div class="nav">
-            <div class="flex-container nav">
-                <ul>
-                    <li>
-                        <h1 class="foo">FOOSESHOES</h1>
-                    </li>
-                </ul>
-                <ul>
-                    <li><i class="fa fa-search"></i></li>
-                    <li>
-                        <h1 class="log">LOGIN or REGISTER</h1></li>
-                </ul>
-            </div>
+    <header class="row split">
+        <div class="logo">
+            <h2>Fooseshoes</h2>
         </div>
-        <div class="flex-container flex-nav">
-            <ul>
-                <li class="home"><a href="#">Home</a></li>
-                <li class="products"><a href="#">Products</a></li>
-                <li class="about"><a href="#">About</a></li>
-                <li class="pages"><a href="#">Pages</a></li>
-                <li class="blog"><a href="#">Blog</a></li>
-                <li class="contact"><a href="#">Contact</a></li>
-            </ul>
-            <ul>
-                <li class="cart"><a href="#"><i class="fa fa-star-o"></i>30</a></li>
-                <li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i>0</a></li>
-            </ul>
+        <div class="login">
+            <i class="fa fa-search"></i>
+            <span>Login or Register</span>
         </div>
     </header>
-    <section class="hero">
-        <div class="description row">
-            <button>$145.99</button>
-            <h1>Pink Shoes</h1>
-            <h1>2013 Collection</h1>
-            <p>Duis tempor mauris ut lobortis lobortis. Phasellus eget bibendum ex, ut aliquet dui. Nunc rhoncus sem velit, in commodo velit euismod in. Donec at porta lacus, at consequat odio. Proin nis.</p>
-            <ul>
-                <li class="eye"><a href="#"><i class="fa fa-eye"></i></a></li>
-                <li class="star"><a href="#"><i class="fa fa-star-o"></i></a></li>
-                <li class="share"><a href="#"><i class="fa fa-share-square-o"></i></a></li>
-                <li class="cart"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-            </ul>
-        </div>
-            <nav>
-                <button>
-                    <h1>Pink Shoes</h1>
-                    <p>Now at $145.99</p>
-                </button>
-                <button>
-                    <h1>Anna Field</h1>
-                    <p>Limited Edition</p>
-                </button>
-                <button>
-                    <h1>Prada</h1>
-                    <p>Summer is Coming</p>
-                </button>
-                <button>
-                    <h1>Casadel</h1>
-                    <p>All Colors available</p>
-                </button>
-                <button>
-                    <h1>Mellow Yellow</h1>
-                    <p>Free delivery</p>
-                </button>
-            </nav>
-    </section>
-    <div class="flex-container">
-        <div class="offers">
-            <img src="/images/shoes.jpg">
-            <img src="/images/shoes_2.jpg">
-            <img src="/images/shoes_3.jpg">
+    <div class="row split main-nav">
+        <nav class="row">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="cart-info row">
+            <div class="starred row column-center">
+                <i class="fa fa-star-o"></i>
+                <span>30</span>
+            </div>
+            <div class="cart row column-center">
+                <i class="fa fa-shopping-cart"></i>
+                <span>0</span>
+            </div>
         </div>
     </div>
+    <div class="Hero column">
+        <div class="Hero__slides">
+            <div class="Hero__slide row active one">
+                <div class="Hero__slide-info column">
+                    <button class="Hero__slide-info-price">$145.99</button>
+                    <h1 class="Hero__slide-info-title">Pink Shoes 2013 Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis optio, consequatur ut veritatis numquam laudantium.</p>
+                    <div class="Hero__slide-info-buttons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Hero__slide row two">
+                <div class="Hero__slide-info column">
+                    <button class="Hero__slide-info-price">$79.99</button>
+                    <h1 class="Hero__slide-info-title">Orange Shoes 2013 Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis optio, consequatur ut veritatis numquam laudantium.</p>
+                    <div class="Hero__slide-info-buttons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Hero__slide row three">
+                <div class="Hero__slide-info column">
+                    <button class="Hero__slide-info-price">$100.99</button>
+                    <h1 class="Hero__slide-info-title">Red Shoes 2013 Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis optio, consequatur ut eritatis numquam laudantium.</p>
+                    <div class="Hero__slide-info-buttons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Hero__slide row four">
+                <div class="Hero__slide-info column">
+                    <button class="Hero__slide-info-price">$59.99</button>
+                    <h1 class="Hero__slide-info-title">Blue Shoes 2013 Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis optio, consequatur ut veritatis numquam laudantium.</p>
+                    <div class="Hero__slide-info-buttons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Hero__slide row five">
+                <div class="Hero__slide-info column">
+                    <button class="Hero__slide-info-price">$145.99</button>
+                    <h1 class="Hero__slide-info-title">Green Shoes 2013 Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis optio, consequatur ut veritatis numquam laudantium.</p>
+                    <div class="Hero__slide-info-buttons">
+                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-share-square-o"></i>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="row center">
+            <button id="one" class="column column-center active">
+                <h3>Pink Shoes</h3>
+                <span>Now at $145.99</span>
+            </button>
+            <button id="two" class="column column-center">
+                <h3>Anna Field</h3>
+                <span>Limited Edition</span>
+            </button>
+            <button id="three" class="column column-center">
+                <h3>Prada</h3>
+                <span>Summer is coming</span>
+            </button>
+            <button id="four" class="column column-center">
+                <h3>Casadei</h3>
+                <span>All Colors available</span>
+            </button>
+            <button id="five" class="column column-center">
+                <h3>Mellow Yellow</h3>
+                <span>Free delivery</span>
+            </button>
+        </nav>
+    </div>
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="js/app.js"></script>
 </body>
-
 </html>
