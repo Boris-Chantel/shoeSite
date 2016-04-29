@@ -72,7 +72,17 @@ a {
 }
 
 .bottom {
-    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.price-button {
+    width: 70px;
+    height: 60px;
+    background: $green;
+    border: none;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: .8em;
 }
 
 // Page Styles
@@ -158,14 +168,6 @@ header {
             width: 50%;
             margin: 50px 0 0 auto;
             padding-right: 100px;
-            &-price {
-                width: 70px;
-                height: 60px;
-                background: $green;
-                border: none;
-                color: #fff;
-                margin-bottom: 15px;
-            }
             &-title {
                 font-size: 2rem;
                 font-weight: 400;
@@ -293,60 +295,132 @@ header {
 .gallery {
     justify-content: center;
     flex-wrap: wrap;
-
+    background-color: #ebe7df;
     .arrivals {
         justify-content: center;
         width: 100%;
         margin: 20px 0;
-        h1{
+        h1 {
             font-weight: 100;
         }
     }
     .sale {
-
-        .heel {
+        & > * {
             height: 275px;
             width: 300px;
-            background: url('../images/city.jpg');
-
-
-            .span {
-                // position: absolute;
-                justify-content: flex-end;
-            }
+            position: relative;
+            // z-index: 100;
+            // &:before {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 100%;
+            //     width:100%;
+            //     background: #fff;
+            //     z-index: -1;
+            // }
+        }
+        .gallery-price {
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+        .gallery-title {
+            font-size: 1.2em;
+            margin-left: 20px;
+        }
+        .one {
+            background: url('../images/Heel_1.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
+        }
+        .two {
+            background: url('../images/Heel_2.jpg') no-repeat top center;
+            background-size: 80%;
+        }
+        .three {
+            background: url('../images/Heel_3.jpg') no-repeat top center;
+            background-size: 80%;
+        }
+        .four {
+            background: url('../images/Heel_4.jpg') no-repeat top center;
+            background-size: 80%;
+        }
+        .five {
+            background: url('../images/Heel_5.jpg') no-repeat top center;
+            background-size: 80%;
+        }
+        .six {
+            background: url('../images/Heel_6.jpg') no-repeat top center;
+            background-size: 80%;
         }
         .second {
             margin: 0 15px;
         }
     }
-    
 }
 
+.gallery-two {
+    padding-bottom: 60px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.info {
+    justify-content: center;
+    .shipping {
+        max-width: 300px;
+        background-color: #dfdbd4;
+        padding: 40px;
+        h1 {
+            font-size: 1.5em;
+            font-family: 'Lato';
+            font-weight: 100;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: .9em;
+        }
+    }
+    .testimonials {
+        max-width: 300px;
+        background-color: #dfdbd4;
+        padding: 40px;
+        h1 {
+            font-size: 1.5em;
+            font-family: 'Lato';
+            font-weight: 100;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: .9em;
+        }
+    }
+    .Blog {
+        max-width: 600px;
+        background-color: #dfdbd4;
+        padding: 40px;
+        h1 {
+            font-size: 1.5em;
+            font-family: 'Lato';
+            font-weight: 100;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .Date {
+            h6 {
+                background-color: $green;
+                text-align: center;
+                padding: 5px 2px;
+            }
+            p {
+                padding-top: 5px;
+                font-size: .7em;
+                margin-left: 10px;
+            }
+        }
+    }
+}
