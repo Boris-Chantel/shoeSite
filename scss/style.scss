@@ -160,7 +160,7 @@ header {
     width: 100%;
     &__slide {
         display: none;
-        min-height: 500px;
+        min-height: 450px;
         &.active {
             display: flex;
         }
@@ -338,24 +338,44 @@ header {
             height: 300px;
         }
         .two {
-            background: url('../images/Heel_2.jpg') no-repeat top center;
-            background-size: 80%;
+            background: url('../images/Heel_2.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
         }
         .three {
-            background: url('../images/Heel_3.jpg') no-repeat top center;
-            background-size: 80%;
+            background: url('../images/Heel_3.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
         }
         .four {
-            background: url('../images/Heel_4.jpg') no-repeat top center;
-            background-size: 80%;
+            background: url('../images/Heel_4.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
         }
         .five {
-            background: url('../images/Heel_5.jpg') no-repeat top center;
-            background-size: 80%;
+            background: url('../images/Heel_5.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
         }
         .six {
-            background: url('../images/Heel_6.jpg') no-repeat top center;
-            background-size: 80%;
+            background: url('../images/Heel_6.jpg'), #fff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top center;
+            background-size: 80%, cover;
+            width: 300px;
+            height: 300px;
         }
         .second {
             margin: 0 15px;
@@ -369,6 +389,9 @@ header {
 
 .info {
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #ebe7df;
     .shipping {
         max-width: 300px;
         background-color: #dfdbd4;
@@ -415,6 +438,21 @@ header {
                 background-color: $green;
                 text-align: center;
                 padding: 5px 2px;
+                color: #fff;
+            }
+            p {
+                padding-top: 5px;
+                font-size: .7em;
+                margin-left: 10px;
+            }
+        }
+        .second {
+            margin-top: 20px;
+            h6 {
+                background-color: $green;
+                text-align: center;
+                padding: 5px 8px;
+                color: #fff;
             }
             p {
                 padding-top: 5px;
@@ -424,3 +462,27 @@ header {
         }
     }
 }
+
+.footer {
+    .text {
+        max-width: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
