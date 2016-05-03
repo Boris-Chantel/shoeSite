@@ -91,6 +91,7 @@ header {
     padding: 0 5%;
     .logo {
         color: $green;
+        justify-content: center;
         h2 {
             font-weight: 300;
             text-transform: uppercase;
@@ -115,6 +116,7 @@ header {
 .main-nav {
     padding: 0 5%;
     a {
+        color: #000;
         border-left: 1px solid #eee;
         padding: 15px 15px;
         height: 100%;
@@ -160,7 +162,8 @@ header {
     width: 100%;
     &__slide {
         display: none;
-        min-height: 450px;
+        min-height: 600px;
+        max-height: 600px;
         &.active {
             display: flex;
         }
@@ -180,6 +183,7 @@ header {
                 }
             }
             p {
+                max-width: 50%;
                 font-size: 1.2rem;
                 margin-bottom: 10px;
                 @include size(medium) {
@@ -198,12 +202,27 @@ header {
                 }
             }
         }
-        &.one,
-        &.two,
-        &.three,
-        &.four,
-        &.five {
+        &.one {
             background: url(../images/1_Home.jpg) no-repeat top left;
+            background-size: 100%;
+
+        }
+        &.two {
+            color: white;
+            background: url(../images/Hero_Heel.jpg) no-repeat top left;
+            background-size: 100%;
+
+        }
+        &.three {
+            background: url(../images/Hero_Heel2.jpg) no-repeat top left;
+            background-size: 100%;
+        }
+        &.four {
+            background: url(../images/Hero_Heel3.jpg) no-repeat top left;
+            background-size: 100%;
+        }
+        &.five {
+            background: url(../images/Hero_Heel4.jpg) no-repeat top left;
             background-size: 100%;
         }
     }
@@ -411,6 +430,7 @@ header {
         max-width: 300px;
         background-color: #dfdbd4;
         padding: 40px;
+        margin: 0 20px;
         h1 {
             font-size: 1.5em;
             font-family: 'Lato';
@@ -451,7 +471,7 @@ header {
             h6 {
                 background-color: $green;
                 text-align: center;
-                padding: 5px 8px;
+                padding: 5px 2px;
                 color: #fff;
             }
             p {
@@ -464,8 +484,42 @@ header {
 }
 
 .footer {
+    padding: 30px 0;
+    background-color: #000;
+    color: #BABABA;
+
+    justify-content: center;
+    h1 {
+        font-size: 1em;
+        font-family: 'Lato';
+        margin-bottom: 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
     .text {
+
+        align-content: center;
         max-width: 350px;
+        .second {
+            margin-top: 10px;
+        }
+
+    }
+    .twitter {
+        max-width: 350px;
+        margin-left: 60px;
+    }
+    .flickr {
+        margin-left: 60px;
+        max-width: 300px;
+        flex-wrap: wrap;
+        .header {
+            width: 100%;
+        }
+        img {
+            max-height: 80px;
+            margin: 5px;
+        }
     }
 }
 
